@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simin Chen - Cloud Engineer Portfolio">
+    <title>Simin Chen | Cloud Resume</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,700,100&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
+
+    
+    <aside id="sidebar-modern">
+        <div class="profile-area">
+            <!-- Optional: Add profile image here -->
+        </div>
+        
+        <nav class="retro-nav" role="navigation" aria-label="Main navigation">
+            <a href="#profile" class="nav-item">PROFILE</a>
+            <a href="#skills" class="nav-item">SKILLS</a>
+            <a href="#projects" class="nav-item">PROJECTS</a>
+            <a href="#certifications" class="nav-item">CERTIFICATIONS</a>
+            <a href="#education" class="nav-item">EDUCATION</a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <a href="https://github.com/pipi29" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="javascript:void(0);" onclick="copyEmail()" id="email-icon" title="copy the email address">
+                <i class="fas fa-envelope"></i> </a>
+            <input type="text" value="diawpijun@gmail.com" id="myEmail" style="display:none;">
+        </div>
+
+        <!-- views Counter -->
+        <div class="views-counter">
+            <p><i class="fas fa-users"></i> Views: 
+            <span id="counter" class="counter-number"></span>
+            <img id="loading-icon" src="images/Cat-Running-Sticker.gif" alt="running cat..." style="width: 60px; vertical-align: middle;">
+        </p>
+        </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div id="wrapper">
+        <!-- Main Content -->
+        <div id="main">
+            
+            <!-- Profile Section -->
+            <section id="profile">
+                <div class="container">
+                
+                    
+                    <header class="major">
+                        <h1 class="section-profile-h1">
+                            <span class="main-title">Hi, I'm Simin Chen</span>
+                        </h1>
+                    </header>
+                    
+                    <div class="profile-content">
+                        <p class="intro-text">
+                            Career-changer turned cloud enthusiast, currently on a mission to architect scalable solutions 
+                            in the AWS ecosystem. I'm passionate about Infrastructure as Code, serverless architectures, 
+                            and making complex systems simple.
+                        </p>
+                        
+                        <!-- Fun Interactive Element -->
+                    
+                        
+                        <div class="profile-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-cloud"></i>
+                                <span>AWS Certified</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-code"></i>
+                                <span>IaC Enthusiast</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Always Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <div class="container">
+                    <h2 class="section-title">Skills</h2>
+                    
+                    <div class="skills-grid">
+                        <!-- Cloud Platforms -->
+                        <div class="skill-category">
+                            <div class="skill-category-header">
+                                <i class="fas fa-cloud"></i>
+                                <h3>Cloud Platforms</h3>
+                            </div>
+                            <ul class="skill-list">
+                                <li><span class="skill-badge">AWS</span> EC2, S3, Lambda, DynamoDB, CloudFront</li>
+                                <li><span class="skill-badge">API Gateway</span> RESTful API design</li>
+                                <li><span class="skill-badge">Route 53</span> DNS management</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Infrastructure as Code -->
+                        <div class="skill-category">
+                            <div class="skill-category-header">
+                                <i class="fas fa-code-branch"></i>
+                                <h3>Infrastructure as Code</h3>
+                            </div>
+                            <ul class="skill-list">
+                                <li><span class="skill-badge">Terraform</span> Cloud infrastructure automation</li>
+                                <li><span class="skill-badge">AWS SAM</span> Serverless applications</li>
+                                <li><span class="skill-badge">CloudFormation</span> AWS resource management</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Development -->
+                        <div class="skill-category">
+                            <div class="skill-category-header">
+                                <i class="fas fa-laptop-code"></i>
+                                <h3>Development</h3>
+                            </div>
+                            <ul class="skill-list">
+                                <li><span class="skill-badge">Python</span> Backend & automation</li>
+                                <li><span class="skill-badge">JavaScript</span> Frontend development</li>
+                                <li><span class="skill-badge">HTML/CSS</span> Web design</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- DevOps & CI/CD -->
+                        <div class="skill-category">
+                            <div class="skill-category-header">
+                                <i class="fas fa-infinity"></i>
+                                <h3>DevOps & CI/CD</h3>
+                            </div>
+                            <ul class="skill-list">
+                                <li><span class="skill-badge">GitHub Actions</span> Automated workflows</li>
+                                <li><span class="skill-badge">Git</span> Version control</li>
+                                <li><span class="skill-badge">Docker</span> Containerization (learning)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <div class="container">
+                    <h2 class="section-title">Featured Projects</h2>
+                    
+                    <div class="projects-grid">
+                        <!-- Cloud Resume Challenge -->
+                        <article class="project-card featured">
+                            <div class="project-image">
+                                <img src="images/cloud-resume.jpg" alt="Cloud Resume Challenge" />
+                                <div class="project-overlay">
+                                    <span class="project-tag">Featured</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3>Cloud Resume Challenge</h3>
+                                <p>
+                                    Built this serverless resume website using AWS services including S3, CloudFront, 
+                                    Route 53, Lambda, DynamoDB, and API Gateway. Implemented CI/CD pipeline with 
+                                    GitHub Actions for automated deployments.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">AWS</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Terraform</span>
+                                    <span class="tech-tag">GitHub Actions</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/yourusername/cloud-resume" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                    <a href="#" class="live-link">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Project 2 -->
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img src="images/project2.jpg" alt="Serverless API" />
+                            </div>
+                            <div class="project-content">
+                                <h3>Serverless REST API</h3>
+                                <p>
+                                    Created a scalable REST API using Lambda functions and API Gateway, 
+                                    with DynamoDB for data persistence. Implemented authentication and 
+                                    rate limiting.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Lambda</span>
+                                    <span class="tech-tag">API Gateway</span>
+                                    <span class="tech-tag">DynamoDB</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Project 3 -->
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img src="images/project3.jpg" alt="Infrastructure Automation" />
+                            </div>
+                            <div class="project-content">
+                                <h3>Infrastructure Automation</h3>
+                                <p>
+                                    Automated cloud infrastructure provisioning using Terraform. Created reusable 
+                                    modules for VPC, EC2, and RDS deployments with proper security groups and 
+                                    IAM roles.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Terraform</span>
+                                    <span class="tech-tag">AWS</span>
+                                    <span class="tech-tag">IaC</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section id="certifications">
+                <div class="container">
+                    <h2 class="section-title">Certifications</h2>
+                    
+                    <div class="cert-grid">
+                        <div class="cert-card">
+                            <div class="cert-badge">
+                                <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png" 
+                                     alt="AWS Cloud Practitioner" />
+                            </div>
+                            <div class="cert-info">
+                                <h3>AWS Certified Cloud Practitioner</h3>
+                                <p class="cert-issuer">Amazon Web Services</p>
+                                <p class="cert-date">
+                                    <i class="fas fa-calendar-alt"></i> Issued: January 2026
+                                </p>
+                                <a href="#" class="cert-verify" target="_blank">
+                                    <i class="fas fa-check-circle"></i> Verify
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Placeholder for future certs -->
+                        <div class="cert-card upcoming">
+                            <div class="cert-badge placeholder">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h3>Next Goal: AWS Solutions Architect</h3>
+                                <p class="cert-issuer">Amazon Web Services</p>
+                                <p class="cert-date">
+                                    <i class="fas fa-target"></i> Target: Q2 2026
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education">
+                <div class="container">
+                    <h2 class="section-title">Education</h2>
+                    
+                    <div class="education-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>Xiangtan University, China</h3>
+                                <p class="timeline-degree">Bachelor's Degree in English Literature</p>
+                                <p class="timeline-date">2017 - 2021</p>
+                            </div>
+                        </div>
+                    
+                    <!-- Learning Resources -->
+                    <div class="learning-resources">
+                        <h3>Currently Learning</h3>
+                        <div class="resources-grid">
+                            <div class="resource-item">
+                                <i class="fas fa-book"></i>
+                                <span>AWS Solutions Architect Prep</span>
+                            </div>
+                            <div class="resource-item">
+                                <i class="fas fa-video"></i>
+                                <span>Advanced Terraform Patterns</span>
+                            </div>
+                            <div class="resource-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Container Orchestration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p class="footer-tagline">
+                        <i class="fas fa-heart"></i> Built with AWS, deployed with GitHub Actions
+                    </p>
+                    <p class="footer-repo">
+                        <a href="https://github.com/yourusername/cloud-resume" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View this project on GitHub
+                        </a>
+                    </p>
+                </div>
+                <ul class="copyright">
+                    <li>&copy; 2026 Simin Chen. All rights reserved.</li>
+                    
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>
