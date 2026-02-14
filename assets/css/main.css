@@ -226,24 +226,24 @@ section {
 }
 
 /* views Counter */
-.views-counter {
-    margin-top: auto;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(145, 106, 112, 0.1);
-    text-align: center;
+.counter-wrapper {
+    display: flex;         
+    align-items: center;  
+    justify-content: center; 
+    gap: 8px;             
+    font-size: 1.1rem;    
 }
 
-.views-counter p {
-    font-size: 0.9rem;
-    color: var(--text-medium);
-    margin: 0;
+#loading-icon {
+    width: 30px;          
+    height: auto;         
+    object-fit: contain;  
+    margin-left: 5px;     
 }
 
 .counter-number {
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 700;
-    color: var(--primary-color);
-    font-size: 1.1rem;
+    font-weight: bold;
+    color: #007bff;       
 }
 
 /* === PROFILE SECTION === */
