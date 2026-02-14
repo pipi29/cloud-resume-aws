@@ -14,55 +14,43 @@
             });
         });
 
-// views Counter - connects to your Lambda function
-        const API_URL = "https://m6axvj0b4e.execute-api.ap-northeast-1.amazonaws.com/prod/visits";
 
-        async function getCounter() {
+//visitor-counter-animation
+const API_URL = "https://m6axvj0b4e.execute-api.ap-northeast-1.amazonaws.com/prod/visits";
+const counterEl = document.getElementById('counter');
+const catIcon = document.getElementById('loading-icon');
+
+async function getCounter() {
     try {
         const response = await fetch(API_URL);
+        if (!response.ok) throw new Error();
         const data = await response.json();
         
-        const counterElement = document.getElementById('counter');
+        const target = parseInt(data.views);
+        animateCounter(counterEl, target);
         
-        // 👇 调试大法：看看能不能找到元素
-        if (!counterElement) {
-            console.error("找不到 id='counter' 的元素！请检查 HTML！");
-            return;
-        }
-
-        const finalCount = data.views; 
-        
-        // 👇 先清空里面的 GIF
-        counterElement.innerHTML = ""; 
-        
-        // 再显示数字
-        counterElement.innerText = finalCount;
-        
-        console.log("成功拿到数字:", finalCount);
-        
+        if (catIcon) catIcon.src = "images/gotit!.gif";
     } catch (error) {
-        console.error("出错了:", error);
-        const el = document.getElementById('counter');
-        if (el) el.innerText = "Error"; // 出错时显示 Error
+        if (counterEl) counterEl.innerText = "Error";
+        if (catIcon) catIcon.src = "images/error.gif";
     }
 }
 
-        
-// Counter animation
-        function animateCounter(element, targetValue) {
-            let currentValue = 0;
-            const increment = Math.ceil(targetValue / 50);
-            const timer = setInterval(() => {
-                currentValue += increment;
-                if (currentValue >= targetValue) {
-                    element.innerText = targetValue.toLocaleString();
-                    clearInterval(timer);
-                } else {
-                    element.innerText = currentValue.toLocaleString();
-                }
-            }, 20);
+function animateCounter(el, target) {
+    let current = 0;
+    const step = Math.ceil(target / 50);
+    const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+            el.innerText = target.toLocaleString();
+            clearInterval(timer);
+        } else {
+            el.innerText = current.toLocaleString();
         }
-        getCounter();
+    }, 20);
+}
+
+getCounter();
 
 // Fun facts rotation
         const funFacts = [
