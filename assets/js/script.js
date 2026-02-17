@@ -16,7 +16,7 @@
 
 
 const API_URL = "https://m6axvj0b4e.execute-api.ap-northeast-1.amazonaws.com/prod/visits";
-const counterEl = document.getElementById('views');
+const counterEl = document.getElementById('counter');
 const catIcon = document.getElementById('loading-icon');
 
 const animate = (el, target) => {
